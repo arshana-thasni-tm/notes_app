@@ -16,6 +16,6 @@ class SplashPage extends StatelessWidget {
             'assets/animations/Animation - 1719206717274.json', height: 300,
             width: 300),
       ),
-    )
+    );
   }
 }

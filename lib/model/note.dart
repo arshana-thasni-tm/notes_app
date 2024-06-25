@@ -1,8 +1,9 @@
 import 'package:hive/hive.dart';
+
 part 'note.g.dart';
 
 @HiveType(typeId: 0)
-class Note{
+class Note {
   @HiveField(1)
   String? title;
   @HiveField(2)
@@ -14,12 +15,12 @@ class Note{
   @HiveField(5)
   int? id;
 
-
   Note({
     required this.title,
     this.content,
-     this.checkList,
-     this.isCheckedList}) {
+    this.checkList,
+    this.isCheckedList,
+  }) {
     id = DateTime.now().microsecondsSinceEpoch;
   }
 }
